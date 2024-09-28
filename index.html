@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-screen" id="calculator-screen">0</div>
+        <div class="calculator-keys">
+            <button type = "button" onclick = "inputDigit('7')">7</button>
+            <button type = "button" onclick = "inputDigit('8')">8</button>
+            <button type = "button" onclick = "inputDigit('9')">9</button>
+            <button type = "button" onclick = "getSquareRoot()">&#8730;</button>
+            <button type = "button" onclick = "inputDigit('4')">4</button>
+            <button type = "button" onclick = "inputDigit('5')">5</button>
+            <button type = "button" onclick = "inputDigit('6')">6</button>
+            <button type = "button" onclick="handleOperator('/')" class="operator">&divide;</button>
+            <button type = "button" onclick = "inputDigit('1')">1</button>
+            <button type = "button" onclick = "inputDigit('2')">2</button>
+            <button type = "button" onclick = "inputDigit('3')">3</button>
+            <button type = "button" onclick="handleOperator('*')" class="operator">&times;</button>
+            <button type = "button" onclick = "inputDigit('0')">0</button>
+            <button type = "button" onclick = "inputDecimal()">.</button>
+            <button type = "button" onclick = "toggleSign()">+/-</button>
+            <button type = "button" onclick="handleOperator('-')" class="operator">-</button>
+            <button type = "button" onclick="allClear()" class="all-clear">AC</button>
+            <button type = "button" onclick="clearEntry()" class="clear-entry">CE</button>
+            <button type = "button" onclick="handleOperator('=')" class="operator">=</button>
+            <button type = "button" onclick="handleOperator('+')" class="operator">+</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
